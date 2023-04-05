@@ -1,0 +1,235 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans","Segoe UI",sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.nav-top{
+    background: #0090dd;
+    padding: 36px 18px;
+    display: block;
+}
+.nav-right{
+    background-color: #3d3c3c;
+    width: 10%;
+    height: 596px;
+
+}
+.main-sec{
+    width: 100%;
+    display: flex;
+}
+
+.main-content{
+    width: 86%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding: 4%;
+}
+
+.count-box{
+    background: #fff;
+    width: 100%;
+    height: 428px;
+    text-align: -webkit-center;
+}
+.count-panel{
+    display: block;
+    position: relative;
+    width: 485px;
+    height: 128px;
+    top: 90px;
+}
+
+.count-panel>span{
+    font-size: 128px;
+    color: #555!important;
+    font-family: clockicons,sans-serif;
+}
+
+.count-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.count-btn button{
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    border-radius: 0;
+    text-align: center;
+    width: 90px;
+    cursor: pointer;
+}
+.count-btn button:nth-child(1){
+    border: #0090dd;
+    background: #0090dd;
+    color: #fff;
+}
+.count-btn button:nth-child(1):hover{
+    border: #0090ddc2;
+    background: #0090ddc2;
+    color: #fff;
+}
+.count-btn button:nth-child(2){
+    border: #fbad10;
+    background: #fbad10;
+    color: #fff;
+}
+.count-btn button:nth-child(2):hover{
+    border: #fbad10ad;
+    background: #fbad10ad;
+    color: #fff;
+}
+.count-btn button:nth-child(3){
+    border: #4aae71;
+    background: #4aae71;
+    color: #fff;
+    display: none;
+}
+.count-btn button:nth-child(3):hover{
+    border: #4aae70ab;
+    background: #4aae70ab;
+    color: #fff;
+}
+.count-btn button:nth-child(4){
+    border: #EF6262;
+    background: #EF6262;
+    color: #fff;
+    display: none;
+}
+.count-btn button:nth-child(4):hover{
+    border: #ef6262b4;
+    background: #ef6262b4;
+    color: #fff;
+}
+.modal-pop{
+    position: fixed;
+    top: 200px;
+    width: 50%;
+    left: 30%;
+    background: #f0f0f0;
+}
+.modal-nav{
+    background: #0090dd;
+    color: #fff;
+    padding: 2%;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-content form{
+    padding: 2%;
+    padding: 2%;
+    margin: 3%;
+}
+form select{
+    border: none;
+    padding: 1% 1%;
+    width: 13%;
+    font-size: 13px;
+    height: auto;
+    background: #fff;
+
+}
+.form-fields{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-btn{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.form-btn button{
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    border-radius: 0;
+    text-align: center;
+    width: 90px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.form-btn button:nth-child(2){
+    border: #555;
+    background: #555;
+    color: #fff;
+}
+.form-btn button:nth-child(2):hover{
+    border: rgba(85, 85, 85, 0.678);
+    background: rgba(85, 85, 85, 0.678);
+    color: #fff;
+}
+.form-btn button:nth-child(1){
+    border: #4aae71;
+    background: #4aae71;
+    color: #fff;
+}
+.form-btn button:nth-child(1):hover{
+    border: #4aae709d;
+    background: #4aae709d;
+    color: #fff;
+}
+select:focus-visible {
+    outline: none;
+}
+
+.modal-nav button{
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+#modal-pop{
+    display: none;
+}
+
+#reset{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+   .main-content{
+    width:100%;
+   }
+   .count-box{
+    height: auto;
+   }
+   .count-panel{
+    height: 330px;
+    width:100%;
+   }
+   .count-panel span{
+    font-size: 63px;
+   }
+  .modal-pop{
+    width:100%;
+    left:0%;
+  }
+  .form-fields{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  form select{
+    width:36%;
+  }
+  .form-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.form-btn button{
+    width:64px;
+}
+  }
